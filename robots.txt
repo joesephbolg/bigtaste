@@ -1,0 +1,26 @@
+# robots.txt for The Big Taste
+# Created by ZionDesigns
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private files (if any)
+Disallow: /admin/
+Disallow: /backend/
+Disallow: /private/
+
+# Sitemap location (replace with your actual sitemap URL)
+Sitemap: https://joesephbolg.github.io/bigtaste/sitemap.xml
+
+# SEO Crawling Instructions
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Optional: Slow down aggressive crawlers
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+# End of file

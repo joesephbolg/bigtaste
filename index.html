@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- ✅ SEO META TAGS -->
+  <title>The Big Taste - Delicious Local & Continental Meals in Ughelli</title>
+  <meta name="description" content="Big Taste offers freshly prepared local and continental dishes in Ughelli. Enjoy fried rice, jollof, soups, meats, and more. Order via Paystack or WhatsApp today!" />
+  <meta name="keywords" content="Big Taste, Ughelli Restaurant, Fried Rice, Jollof Rice, Egusi Soup, Nigerian Food, Paystack Orders, Online Food Order, Local Meals, Continental Dishes, Big Taste, big taste" />
+  <meta name="author" content="ZionDesigns for The Big Taste" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://joesephbolg.github.io/bigtaste/" />
+
+  <!-- ✅ JSON-LD Structured Data for The Big Taste -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "The Big Taste",
+    "image": "https://joesephbolg.github.io/bigtaste/logo.png",
+    "@id": "https://joesephbolg.github.io/bigtaste",
+    "url": "https://joesephbolg.github.io/bigtaste",
+    "telephone": "+2347012345678",
+    "priceRange": "₦₦",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Robert Arlone street off dortie, uloho avenue",
+      "addressLocality": "Ughelli",
+      "addressRegion": "Delta State",
+      "addressCountry": "NG"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 5.4893,
+      "longitude": 6.0046
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "08:00",
+      "closes": "22:00"
+    }],
+    "servesCuisine": ["Nigerian", "Continental", "African", "Local"],
+    "menu": "https://joesephbolg.github.io/bigtaste/#menu",
+    "sameAs": [
+      "https://www.facebook.com/thebigtaste",
+      "https://www.instagram.com/invites/contact/?igsh=12a33mbu42p27&uym_content=zy463b0",
+      "https://whatsapp.com/channel/0029VbB0qknFSAtBYLwaJiOu"
+    ]
+  }
+  </script>
+
+  <!-- ✅ Open Graph / Facebook -->
+  <meta property="og:title" content="Big Taste Restaurant - Ughelli" />
+  <meta property="og:description" content="Order fresh, tasty meals every day — fast delivery, online payment, and WhatsApp orders available!" />
+  <meta property="og:image" content="https://joesephbolg.github.io/bigtaste/logo.png" />
+  <meta property="og:url" content="https://joesephbolg.github.io/bigtaste" />
+  <meta property="og:type" content="website" />
+
+  <!-- ✅ Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Big Taste - Delicious Local & Continental Meals" />
+  <meta name="twitter:description" content="Enjoy freshly prepared meals every day in Ughelli. Order now via Paystack or WhatsApp!" />
+  <meta name="twitter:image" content="https://joesephbolg.github.io/bigtaste/logo.png" />
+
+  <!-- ✅ FAVICON -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- ✅ STYLES -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    :root {
+      --primary: #e67e22;
+      --bg: #fff8f0;
+      --dark: #333;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--dark);
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 15px 0;
+    }
+    .container {
+      width: 90%;
+      margin: auto;
+      max-width: 1100px;
+    }
+    .logo {
+      font-size: 1.6em;
+      font-weight: bold;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 40px 0;
+    }
+    .hero img {
+      width: 300px;
+      border-radius: 10px;
+    }
+    .hero-left {
+      flex: 1;
+      padding-right: 20px;
+    }
+    .btn {
+      background: var(--primary);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .menu-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      padding: 10px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .menu-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    .menu-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .add-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .add-btn:hover {
+      background: #cf711f;
+    }
+    .cart {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-top: 40px;
+    }
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 50px;
+    }
+    #contact a {
+      transition: transform 0.3s ease;
+    }
+    #contact a:hover {
+      transform: scale(1.2);
+    }
+
+    /* ✅ RESPONSIVE FIXES */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-right img {
+        width: 100%;
+        max-width: 350px;
+      }
+      .logo {
+        font-size: 1.3em;
+      }
+      nav a {
+        margin-left: 10px;
+        font-size: 0.9em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 14px;
+      }
+      .hero img {
+        width: 100%;
+      }
+      .btn {
+        padding: 8px 16px;
+        font-size: 0.9em;
+      }
+      .menu-card img {
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
+      <div class="logo">🍽️ The Big Taste</div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="home">
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Welcome to <span style="color:var(--primary)">The Big Taste</span></h1>
+        <p>Delicious local and continental meals made fresh for you. Order your favorite dishes and enjoy seamless checkout via Paystack or WhatsApp.</p>
+        <a href="#menu" class="btn">View Menu</a>
+      </div>
+      <div class="hero-right">
+        <img src="picture.jpg" alt="Delicious Food">
+      </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="menu">
+      <h2 style="color:var(--primary);margin-top:40px;">🍛 Our Menu</h2>
+
+      <!-- Day Switch Dropdown -->
+      <div style="margin: 20px 0;">
+        <label for="daySelect"><strong>Select Day:</strong></label>
+        <select id="daySelect" class="day-switch">
+          <option value="monday">Monday</option>
+          <option value="tuesday">Tuesday</option>
+          <option value="wednesday">Wednesday</option>
+          <option value="thursday">Thursday</option>
+          <option value="friday">Friday</option>
+          <option value="saturday">Saturday</option>
+          <option value="sunday">Sunday</option>
+        </select>
+      </div>
+
+      <!-- Dynamic Menu Display -->
+      <div id="menuContainer" class="menu-grid"></div>
+
+      <!-- CART SECTION -->
+      <div class="cart">
+        <h3>Your Order</h3>
+        <p>If you can't pay with Paystack, your order will be directed to WhatsApp automatically.</p>
+        <ul class="cart-items"></ul>
+        <p class="cart-total">Total: ₦<span id="total">0</span></p>
+        <button class="btn" id="checkout">Pay with Paystack</button>
+        <button class="btn" id="whatsappOrder" style="background:#25d366;">Order via WhatsApp</button>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" style="margin-top:60px; text-align:center;">
+      <h2 style="color:var(--primary); margin-bottom:20px;">Connect with Us</h2>
+      <div style="display:flex; justify-content:center; gap:30px; font-size:2em;">
+        <a href="https://www.instagram.com/invites/contact/?igsh=12a33mbu42p27&uym_content=zy463b0" target="_blank" style="color:#E4405F;"><i class="fab fa-instagram"></i></a>
+        <a href="https://whatsapp.com/channel/0029VbB0qknFSAtBYLwaJiOu" target="_blank" style="color:#25D366;"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://facebook.com/thebigtaste" target="_blank" style="color:#1877F2;"><i class="fab fa-facebook"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Big Taste | Designed by ZionDesigns</p>
+  </footer>
+
+  <!-- ✅ PAYSTACK SCRIPT -->
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <script src="main.js"></script>
+
+  <script>
+    const dayMenus = {
+      monday: [
+        { name: "Fried Rice", price: 1500, img: "fried.jpg" },
+        { name: "Jollof Rice", price: 1200, img: "jollof.jpg" },
+        { name: "Dodo", price: 600, img: "dodo.jpg" },
+        { name: "Beans & Plantain", price: 1300, img: "beans.jpeg" },
+        { name: "Egusi Vegetable Soup", price: 1500, img: "egusi.jpg" },
+        { name: "Eba", price: 500, img: "eba.jpg" },
+        { name: "Fufu", price: 500, img: "fufu.jpg" },
+        { name: "Turkey", price: 2000, img: "turkey.jpg" },
+        { name: "Chicken", price: 1800, img: "chicken.jpg" },
+        { name: "Beef", price: 1000, img: "beef.jpg" },
+        { name: "Fish", price: 1500, img: "fish.jpeg" }
+      ],
+      tuesday: [
+        { name: "Fried Rice", price: 1500, img: "fried.jpg" },
+        { name: "White Rice & Stew", price: 1300, img: "white.jpg" },
+        { name: "Salad", price: 1000, img: "salad.jpg" },
+        { name: "Fried Beans & Dodo", price: 1200, img: "beans.jpeg" },
+        { name: "Vegetable Soup", price: 1500, img: "veg.jpeg" },
+        { name: "Ogbono Soup", price: 1500, img: "ogbono.jpeg" },
+        { name: "Chicken", price: 1800, img: "chicken.jpg" },
+        { name: "Fish", price: 1500, img: "fish.jpeg" },
+        { name: "Boiled Egg", price: 500, img: "eggs.jpeg" }
+      ],
+      wednesday: [
+        { name: "Fried Rice", price: 1500, img: "fried.jpg" },
+        { name: "Jollof Rice", price: 1200, img: "jollof.jpg" },
+        { name: "Dodo & Fried Beans", price: 1300, img: "beans.jpeg" },
+        { name: "Turkey", price: 2000, img: "turkey.jpg" },
+        { name: "Chicken", price: 1800, img: "chicken.jpg" },
+        { name: "Fish", price: 1500, img: "fish.jpeg" },
+        { name: "Egg", price: 500, img: "eggs.jpeg" }
+      ],
+      thursday: [
+        { name: "Fried Rice", price: 1500, img: "fried.jpg" },
+        { name: "Jollof Rice", price: 1200, img: "jollof.jpg" },
+        { name: "Beans & Plantain", price: 1300, img: "beans.jpeg" },
+        { name: "Egusi Soup", price: 1500, img: "egusi.jpg" },
+        { name: "Eba", price: 500, img: "eba.jpg" },
+        { name: "Fufu", price: 500, img: "fufu.jpg" },
+        { name: "Turkey", price: 2000, img: "turkey.jpg" },
+        { name: "Chicken", price: 1800, img: "chicken.jpg" },
+        { name: "Beef", price: 1000, img: "beef.jpg" },
+        { name: "Fish", price: 1500, img: "fish.jpeg" }
+      ],
+      friday: [
+        { name: "Fried Rice", price: 1500, img: "fried.jpg" },
+        { name: "Jollof Rice", price: 1200, img: "jollof.jpg" },
+        { name: "Beans & Plantain", price: 1300, img: "beans.jpeg" },
+        { name: "Egusi Soup", price: 1500, img: "egusi.jpg" },
+        { name: "Eba", price: 500, img: "eba.jpg" },
+        { name: "Fufu", price: 500, img: "fufu.jpg" },
+        { name: "Turkey", price: 2000, img: "turkey.jpg" },
+        { name: "Chicken", price: 1800, img: "chicken.jpg" },
+        { name: "Beef", price: 1000, img: "beef.jpg" },
+        { name: "Fish", price: 1500, img: "fish.jpeg" }
+      ],
+      saturday: [
+        { name: "Fried Rice", price: 1500, img: "fried.jpg" },
+        { name: "Jollof Rice", price: 1200, img: "jollof.jpg" },
+        { name: "Beans & Plantain", price: 1300, img: "beans.jpeg" },
+        { name: "Egusi Soup", price: 1500, img: "egusi.jpg" },
+        { name: "Eba", price: 500, img: "eba.jpg" },
+        { name: "Fufu", price: 500, img: "fufu.jpg" },
+        { name: "Turkey", price: 2000, img: "turkey.jpg" },
+        { name: "Chicken", price: 1800, img: "chicken.jpg" },
+        { name: "Beef", price: 1000, img: "beef.jpg" },
+        { name: "Fish", price: 1500, img: "fish.jpeg" }
+      ],
+      sunday: [
+        { name: "Fried Rice", price: 1500, img: "fried.jpg" },
+        { name: "Jollof Rice", price: 1200, img: "jollof.jpg" },
+        { name: "Dodo", price: 600, img: "dodo.jpg" },
+        { name: "Beans & Plantain", price: 1300, img: "beans.jpeg" },
+        { name: "Egusi Vegetable Soup", price: 1500, img: "egusi.jpg" },
+        { name: "Eba", price: 500, img: "eba.jpg" },
+        { name: "Fufu", price: 500, img: "fufu.jpg" },
+        { name: "Turkey", price: 2000, img: "turkey.jpg" },
+        { name: "Chicken", price: 1800, img: "chicken.jpg" },
+        { name: "Beef", price: 1000, img: "beef.jpg" },
+        { name: "Fish", price: 1500, img: "fish.jpeg" }
+      ]
+    };
+  </script>
+</body>
+</html>
